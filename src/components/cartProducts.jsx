@@ -18,7 +18,7 @@ const CartProduct = () => {
 
   useEffect(() => {
     if (sku) {
-      axios.post("http://localhost:8080/carts/addAnonCart", {
+      axios.post("http://greenleap.ap-south-1.elasticbeanstalk.com/carts/addAnonCart", {
         "sku": sku,
         "quantity": 1
       })
